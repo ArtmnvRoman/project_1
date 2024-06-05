@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="styles_for_project/style_for_slider.css">
+    <link rel="stylesheet" href="styles_for_project/about_us_style.css">
+    <link rel="stylesheet" href="styles_for_project/travel_basket.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <img class="img_logo" src="pictures_for_tours/loggo.png" alt="Slide 1">
+                    <li><button><a href="#home">Домашняя страница</a></button></li>
+                    <li><button><a href="#tours">Туры</a></button></li>
+                    <li><button id="open-cart">Карта ваших путешествий</button></li>
+                    <li><button><a href="feedback.html">Обратная связь</a></button></li>
+                </ul>
+            </nav>
+    </header>
+
+    
+    <h2 class="company_name" id="home">Путешествуй легко!</h2>
+    
+
+    <section class="slider_body">
+        <div class="slider">
+            <div class="slides">
+                <img src="slides/guri-emir.jpg" alt="Image 1">
+                <img src="slides/rivers1.jpg" alt="Image 2">
+                <img src="slides/tashkent-metro3.jpg" alt="Image 3">
+                <img src="slides/mountains6.jpg" alt="Image 4">
+                <img src="slides/shahi-zinda.jpg" alt="Image 5">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>О нашей компании</h2>
+                <p>Добро пожаловать в нашу туристическую компанию «Путешествуй легко!», специализирующуюся на организации увлекательных туров по Узбекистану! Мы предлагаем уникальные путевки, которые позволят вам окунуться в богатую историю и культуру этой удивительной страны.</p>
+                <p>С нами вы можете быть уверены в качестве обслуживания, безопасности и незабываемых впечатлениях. Присоединяйтесь к нам и откройте для себя мир по-новому!</p>
+            </div>
+        </div>
+    </section>
+    <section id="tours">
+        <h2 class="our_tours">Наши Туры</h2>
+        <div class="tour" data-id="1" data-name="Тур по Бухаре" data-price="13000">
+            <img src="pictures_for_tours/bukhara.jpg" alt="Tour 1 Image">
+            <h3 class="tour_names">Тур по Бухаре</h3>
+            <p>Исторические памятники</p>
+            <p class="price">13000 ₽</p>
+            <button class="add-to-cart">Добавить в Вашу карту</button>
+        </div>
+        <div class="tour" data-id="2" data-name="Тур по Самарканду" data-price="12500">
+            <img src="pictures_for_tours/samarkand.jpg" alt="Tour 2 Image">
+            <h3 class="tour_names">Тур по Самарканду</h3>
+            <p>Священные места</p>
+            <p class="price">12500 ₽</p>
+            <button class="add-to-cart">Добавить в Вашу карту</button>
+        </div>
+        <div class="tour" data-id="3" data-name="Тур по Фергане" data-price="15000">
+            <img src="pictures_for_tours/ferghana.jpg" alt="Tour 3 Image">
+            <h3 class="tour_names">Тур по Фергане</h3>
+            <p>Памятники империи</p>
+            <p class="price">15000 ₽</p>
+            <button class="add-to-cart">Добавить в Вашу карту</button>
+        </div>
+        <div class="tour" data-id="4" data-name="Тур по Ургенчу" data-price="10000">
+            <img src="pictures_for_tours/urgench.jpg" alt="Tour 4 Image">
+            <h3 class="tour_names">Тур по Ургенчу</h3>
+            <p>Новая история</p>
+            <p class="price">10000 ₽</p>
+            <button class="add-to-cart">Добавить в Вашу карту</button>
+        </div>
+        <div class="tour" data-id="5" data-name="Тур по Хиве" data-price="14000">
+            <img src="pictures_for_tours/khiva.jpg" alt="Tour 5 Image">
+            <h3 class="tour_names">Тур по Хиве</h3>
+            <p>Песчаные чудеса</p>
+            <p class="price">14000 ₽</p>
+            <button class="add-to-cart">Добавить в Вашу карту</button>
+        </div>
+        <div class="tour" data-id="6" data-name="Тур по Ташкенту" data-price="20000">
+            <img src="pictures_for_tours/tashkent_2.jpg" alt="Tour 6 Image">
+            <h3 class="tour_names">Тур по Ташкенту</h3>
+            <p>Ночная жизнь</p>
+            <p class="price">20000 ₽</p>
+            <button class="add-to-cart">Добавить в Вашу карту</button>
+        </div>
+        <div class="tour" data-id="7" data-name="Тур по Термезу" data-price="11000">
+            <img src="pictures_for_tours/termez.jpg" alt="Tour 7 Image">
+            <h3 class="tour_names">Тур по Термезу</h3>
+            <p>Военная история</p>
+            <p class="price">11000 ₽</p>
+            <button class="add-to-cart">Добавить в Вашу карту</button>
+        </div>
+    </section>
+
+    <section id="order-form">
+        <h2>Форма для заказа путевок</h2>
+        <form id="checkout-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите имя" required minlength="2" maxlength="15"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Введите свой e-mail" id="email" name="email" required><br><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Телефон  в формате 89991234567" class="forms_3" required pattern="[0-9]{11}"><br><br>
+
+            <label for="address">Адрес:</label>
+            <input type="text" placeholder="Напишите свой адрес" required minlength="10"><br><br>
+
+            <button id="sub" type="submit">Отправить заявку</button>
+        </form>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваши путевки</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="checkout">Проверка путевок</button>
+            <button id="clear-cart">Сбросить путевки</button>
+        </div>
+    </div>
+</body>
+</html>

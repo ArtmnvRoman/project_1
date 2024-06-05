@@ -1,0 +1,242 @@
+body {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background: rgb(150,195,204);
+    background: linear-gradient(90deg, rgba(150,195,204,1) 0%, rgba(240,113,29,1) 25%, rgba(240,113,29,1) 76%, rgba(150,195,204,1) 100%);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+.img_logo {
+    width: 80px;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    margin-top: 20px;
+}
+
+nav ul li a, nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.1em;
+}
+
+.company_name {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.our_tours {
+    margin-top: 40px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tour {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.499124649859944) 0%, rgba(255,207,175,0.46551120448179273) 53%, rgba(72,204,255,0.20780812324929976) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tour:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tour img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e65500;
+}
+
+
+.price {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.tour_names {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Адаптив для планшетов */
+@media (max-width: 768px) {
+    /* header {
+        position: static;
+        z-index: 1;
+    } */
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .img_logo {
+        margin: auto;
+    }
+
+    .tour {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        padding: 12px 25px;
+    }
+
+    nav ul li {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        /* position: static;
+        z-index: 1; */
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0px;
+    }
+
+    .tour {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+
+
+    button {
+        padding: 8px 15px;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
