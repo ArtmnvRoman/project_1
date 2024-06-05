@@ -1,0 +1,28 @@
+.slider_body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #333;  
+    border-radius: 10px;    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
